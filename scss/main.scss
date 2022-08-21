@@ -1,0 +1,208 @@
+// clase que contiene al main
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+
+    // clase qeu contiene la imagen de fondo princical
+    .backgroundPrincipal_1 {
+        display: flex;
+        position: relative;
+        height: 60vh;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-size: cover;
+            background-image: url("../imagenes/nosotrosCategoria1.jpg");
+            background-position: center 0px;
+            background-attachment: fixed;
+            opacity: 0.9;
+            z-index: -1;
+            width: 100%;
+
+        }
+
+        // clase que contiene la frase sobre la imagen principal
+
+        .fraseContainer {
+            @include fraseStyle;
+
+            .frase1 {
+                color: white;
+                font-size: 0.8rem;
+            }
+
+            .frase2 {
+                color: $azul;
+            }
+        }
+
+    }
+
+    .backgroundPrincipal_2 {
+        display: flex;
+        position: relative;
+        height: 60vh;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-size: cover;
+            background-image: url("../imagenes/bazaCategoria2.jpg");
+            background-position: center 0px;
+            background-attachment: fixed;
+            opacity: 0.9;
+            z-index: -1;
+            width: 100%;
+
+        }
+
+        // clase que contiene la frase sobre la imagen principal
+
+        .fraseContainer {
+            @include fraseStyle;
+
+            .frase1 {
+                color: white;
+                font-size: 0.8rem;
+            }
+
+            .frase2 {
+                color: $azul;
+            }
+        }
+
+    }
+
+    .backgroundPrincipal_3 {
+        display: flex;
+        position: relative;
+        height: 60vh;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-size: cover;
+            background-image: url("../imagenes/cubiertosCategoria.jpg");
+            background-position: center 0px;
+            background-attachment: fixed;
+            opacity: 0.9;
+            z-index: -1;
+            width: 100%;
+
+        }
+
+        // clase que contiene la frase sobre la imagen principal
+
+        .fraseContainer {
+            @include fraseStyle;
+
+            .frase1 {
+                color: white;
+                font-size: 0.8rem;
+            }
+
+            .frase2 {
+                color: $azul;
+            }
+        }
+
+    }
+
+    .backgroundPrincipal_4 {
+        display: flex;
+        position: relative;
+        height: 60vh;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-size: cover;
+            background-image: url("../imagenes/vajillaCategotia2.jpg");
+            background-position: center -20px;
+            background-attachment: fixed;
+            opacity: 0.9;
+            z-index: -1;
+            width: 100%;
+
+        }
+
+        // clase que contiene la frase sobre la imagen principal
+
+        .fraseContainer {
+            @include fraseStyle;
+
+            .frase1 {
+                color: white;
+                font-size: 0.8rem;
+            }
+
+            .frase2 {
+                color: $azul;
+            }
+        }
+
+    }
+
+    // clase que le da estilo a la seccion NOSOTROS
+    .sectionNosotros {
+        text-align: center;
+        width: 100%;
+
+        .textoNosotrosContainer {
+            width: 100%;
+            padding: 0px 10px 0px 10px;
+
+            h2 {
+                @include titulo
+            }
+
+            p {
+                text-align: justify;
+                padding: 20px;
+
+            }
+        }
+    }
+
+
+    // clase que le da estilo a la seccion DESTACADOS
+
+    .sectionDestacados {
+        width: 100%;
+        background-color: $grisClaro;
+        margin-top: 100px;
+
+
+
+
+        h2 {
+            @include titulo;
+            text-align: center;
+        }
+    }
+
+
+}

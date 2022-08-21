@@ -1,0 +1,6 @@
+[
+            { "id": 1, "nombre": "termo super plus", "precio": 350, "imagen": "./imagenes/termo.jpg" },
+            { "id": 2, "nombre": "olla mega smart ", "precio": 120, "imagen": "./imagenes/olla.jpg" },
+            { "id": 3, "nombre": "plato blanco", "precio": 700, "imagen": "./imagenes/plato.jpg" },
+            { "id": 4, "nombre": "tortera xl aluminio", "precio":80, "imagen": "./imagenes/tortera.jpg" }  
+        ]

@@ -1,0 +1,134 @@
+footer {
+    display: flex;
+    flex-direction: column;
+
+    .containerElementsFooter {
+        display: flex;
+        flex-direction: column;
+        background-color: $grisClaro;
+        justify-content: center;
+    }
+
+    .contactoFormularioContainer {
+        display: flex;
+        flex-direction: column;
+
+        .datosContactoContainer {
+            display: block;
+            padding-left: 20px;
+
+            h3 {
+                padding: 20px;
+            }
+
+            .itemContacto {
+                display: flex;
+
+                div {
+                    padding: 5px;
+                }
+            }
+        }
+
+        .styleFormulario {
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+
+            .inputDatosContainer {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                .nombreStyle {
+                    padding: 5px;
+                    border: none;
+                }
+
+                .emailStyle {
+                    padding: 5px;
+                    width: 240px;
+                    border: none;
+                }
+
+                .ComentariosStyler {
+                    border: none;
+                }
+            }
+
+            .btnContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .botones {
+                    @include btnBase;
+                    border: 2px solid $grisClaro;
+
+                    &:hover {
+                        background-color: $azul;
+                        color: white;
+                    }
+
+                    &:active {
+                        background-color: $azul;
+                        color: white;
+                        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+                    }
+                }
+            }
+        }
+    }
+
+    .redesMapaContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .redesContainer {
+            display: flex;
+            justify-content: center;
+            
+
+            img {
+                width: 30px;
+                margin: 10px;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+
+        .ubicacionContainer {
+            display: flex;
+            margin-bottom: 20px;
+
+            .iconUbicacion {
+                padding-bottom: 5px;
+            }
+
+            h3 {
+                font-size: 1rem;
+                padding-bottom: 5px;
+
+            }
+
+            iframe {
+                margin-bottom: 20px;
+            }
+        }
+
+    }
+
+    .nombreEstudiante {
+        background-color: $azul;
+        color: white;
+        height: 60px;
+        padding: 20px;
+        text-align: center;
+    }
+
+
+}

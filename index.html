@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/main.css">
+    <title>LINGUINI</title>
+</head>
+
+<body>
+    <header>
+        <!-- DIV CONTENEDOR DE TODO LO QUE VAMOS A COLOCAR EN EL HEADER -->
+        <div class="headerContainer">
+
+            <img id="logo" class="logo" src="./imagenes/logoLinguini-04.svg" alt="logo">
+
+            <div class="buscarContainer">
+                <input id="buscar" class="inputBusqueda" placeholder="Buscar" type="text">
+                <span id="lupa" class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+
+            <div class="carrito">
+                <div><span class="material-symbols-outlined">
+                        shopping_cart
+                    </span></div>
+                <h3 class="cantidad">3</h3>
+            </div>
+        </div>
+    </header>
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="barBtn">
+            <span class="material-symbols-outlined">menu</span>
+        </label>
+
+        <ul class="navMenu">
+            <li><a class="categoriaActiva active" href="#nosotros">
+                    <h2>NOSOTROS</h2>
+                </a></li>
+
+            <li><a href="./vistas/bazar.html">
+                    <h2>BAZAR</h2>
+                </a></li>
+
+            <li><a href="./vistas/cubiertos.html">
+                    <h2>CUBIERTOS</h2>
+                </a></li>
+
+            <li><a href="./vistas/vajillas.html">
+                    <h2>VAJILLAS</h2>
+                </a></li>
+
+            <li><a href="#marcas">
+                    <h2>MARCAS</h2>
+                </a></li>
+
+            <li><a href="#contactos">
+                    <h2>CONTACTOS</h2>
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- DIV CONTENEDOR DEL CONTENIDO CENTRAL DE LA PAGINA -->
+    <div class="mainContainer">
+
+        <!-- DIV DONDE COLOCALEREMOS LA IMAGENDE FONDO MAS EL TEXTO -->
+        <div class="backgroundPrincipal_1">
+            <div class="fraseContainer">
+                <h1 class="frase1">EL ARTE DE LA COCINA</h1>
+                <h1 class="frase2">PASION & SABOR</h1>
+            </div>
+        </div>
+
+        <!-- SECCION NOSOTROS -->
+
+        <div class="sectionNosotros" id="nosotros">
+            <div class="textoNosotrosContainer">
+                <h2>NOSOTROS</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam dolorem iusto accusantium
+                    quisquam
+                    animi, ea perferendis voluptatum amet architecto doloremque natus nam repellat repellendus cum,
+                    libero
+                    voluptate necessitatibus commodi nihil? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Vel,
+                    id error aspernatur minus iste deserunt enim dolor. Amet nisi perspiciatis non aperiam. Perspiciatis
+                    eius numquam, cumque tenetur fuga nemo quo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Incidunt, repellat recusandae consequuntur sit suscipit iusto accusantium saepe modi quibusdam nisi,
+                    cumque blanditiis molestias similique nostrum. Dolore amet perspiciatis quo vero.</p>
+            </div>
+        </div>
+
+        <!-- SECCION DESTACADOS -->
+
+        <section class="sectionDestacados">
+            <h2 class="h2Titulo">DESTACADOS</h2>
+
+            <!-- DIV DONDE CONTENDREMOS LA CARD DE CADA PRODUCTO DESTACADO -->
+
+
+            <div class="ordenarProdcutos">
+                <h1>PRODUCTOS</h1>
+                <div class="ordenar">
+                    <label class="ordenarStyle" for="ordenar">Ordenar por</label>
+                    <select id="opcionOrdenar" onchange="ordenarProductos()">
+                        <option value="nombre">Nombre</option>
+                        <option value="precio">Precio</option>
+                    </select>
+                </div>
+
+                
+            </div>
+
+
+
+            <!-- LOS PRODUCTOS SE INCLUYEN POR EL JAVASCRIPT -->
+
+            <div id="galeria" class="cardContainer">
+            </div>
+
+
+
+            <!-- ESTE CODIGO YA NO HACE FALTA EN EL HTML -->
+
+
+            <!-- 
+            <div class="cardContainer">
+                <div class="card">
+                    <img src="./imagenes/termo.jpg" alt="termo">
+                    <h2 class="h2Card">Termo de alumino, Marca Super Xtremo, mega resistente.</h2>
+                    <form>
+                        <select>
+                            <option disabled selected>Selecciona un color</option>
+                            <option value="negro">negro</option>
+                            <option value="plateado">blanco</option>
+                            <option value="blanco">plateado</option>
+                        </select>
+                    </form>
+                    <button class="btn_enviar">comprar</button>
+                </div>
+            </div> -->
+
+
+            <!-- SECCION MARCAS -->
+
+            <section class="marcasContainer" id="marcas">
+                <h2>MARCAS</h2>
+                <div class="textoMarcasContainer">
+                    <p>Solo las mejores marcas, Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        Voluptatum,
+                        tempora! Commodi placeat
+                        inventore fuga totam, quas expedita tempore illo consequuntur temporibus magnam possimus
+                        nostrum!
+                        Quo eligendi rem placeat sequi alias.</p>
+                    <img src="./imagenes/cubiertosDorados.jpg" alt="">
+                </div>
+
+                <!-- GRID DONDE COLOCAREMOS LAS IMAGENES DE LAS MARCAS 
+                      NOTA:
+                              - imagenes agregadas por CSS como background de los <div></div>
+                              - tambien se pueden agregar por aqui en el HTML
+                              depende de cada quien y de la necesidad. 
+                      -->
+
+                <div class="grid_Container">
+                    <div class="item1"></div>
+                    <div class="item2"></div>
+                    <div class="item3"></div>
+                    <div class="item4"></div>
+                    <div class="item5"></div>
+                    <div class="item6"></div>
+                    <div class="item7"></div>
+
+                </div>
+            </section>
+    </div>
+
+    <footer>
+
+        <div class="containerElementsFooter">
+
+            <!-- DIV QUE SE LE VA A ASIGNAR UNA CLASE QUE VA A CONTENENER DATOS DE CONTACTO + FORMULARRIO -->
+
+            <div class="contactoFormularioContainer">
+
+                <section class="" id="contactos">
+
+                    <!-- DATOS DE CONTACTO -->
+
+                    <div class="datosContactoContainer">
+                        <h3>Contactános</h3>
+                        <div class="itemContacto">
+                            <div><span class="material-symbols-outlined">
+                                    call
+                                </span></div>
+                            <div>(555)555-555-555</div>
+                        </div>
+                        <div class="itemContacto">
+                            <div><span class="material-symbols-outlined">
+                                    mail
+                                </span></div>
+                            <div>ventas@linguini.com</div>
+                        </div>
+                    </div>
+
+                    <!-- FORMULARIO -->
+
+
+                    <form class="styleFormulario">
+                        <div class="inputDatosContainer">
+                            <input class="nombreStyle" placeholder="Nombre:" type="text">
+                            <input class="emailStyle" placeholder="Correo electronico:" type="email">
+                        </div>
+                        <textarea class="ComentariosStyler" placeholder="Comentarios" name="" id="" cols="35"
+                            rows="15"></textarea>
+                        <div class="btnContainer">
+                            <input class="botones" type="submit">
+                            <input class="botones" type="reset">
+                        </div>
+                    </form>
+
+                </section>
+            </div>
+
+            <!--DIV QUE SE LE VA A ASIGNAR UNA CLASE QUE VA A CONTENER LAS REDES + MAPAK -->
+
+            <div class="redesMapaContainer">
+
+                <!-- REDES SOCIALES -->
+
+                <div>
+                    <div>
+                        <ul class="redesContainer">
+                            <li><a href="#"><img src="./iconos/iconoFacebook.svg" alt="iconoFacebook"></a></li>
+                            <li><a href=""><img src="./iconos/iconosInstagram.svg" alt="iconosInstagram"></a>
+                            </li>
+                            <li><a href=""><img src="./iconos/iconosTwitter.svg" alt="iconosTwitter"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- MAPA -->
+
+                    <div>
+
+                        <div class="ubicacionContainer">
+                            <div class="iconUbicacion"><span class="material-symbols-outlined">
+                                    location_on
+                                </span></div>
+
+                            <h3>Direccion fisica del ecommerce</h3>
+                        </div>
+
+                        <div class="mapa">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115553.2627499884!2d55.21783241762746!3d25.168145386307735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1ses!2sar!4v1654831596880!5m2!1ses!2sar"
+                                width="300    " height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- NOMBRE DEL ESTUDIANTE -->
+
+        <div class="nombreEstudiante">
+            <h3>By: nombre del estudiante</h3>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+
+</body>
+
+
+</html>

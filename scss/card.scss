@@ -1,0 +1,67 @@
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 50px;
+
+
+    .card {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border: 1px solid $grisOscuro;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 250px;
+        margin: 20px;
+        background-color: white;
+
+        &:hover {
+            box-shadow: $azul 0px 5px 15px;
+        }
+
+        img {
+            border-radius: 15px;
+            width: 240px;
+
+        }
+
+        .h2Card {
+            text-align: center;
+            font-size: 1rem;
+            color: $grisOscuro;
+            margin: 10px;
+        }
+
+        select {
+            width: 210px;
+            margin: 10px;
+            padding: 5px;
+            border-radius: 15px;
+            text-transform: uppercase;
+            border: 2px solid $grisClaro;
+
+
+        }
+
+        .btn_enviar {
+            @include btnBase;
+            border: 1px solid $grisClaro;
+           
+
+            &:hover {
+                background-color: $azul;
+                color: white;
+
+            }
+
+            &:active {
+                background-color: $azul;
+                color: white;
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+            }
+
+        }
+
+    }
+}

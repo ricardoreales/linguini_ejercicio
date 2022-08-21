@@ -1,0 +1,106 @@
+nav {
+    height: 50px;
+    display: flex;
+    position: sticky;
+    top: 160px;
+    transform: translateY(-160px);
+    z-index: 2;
+    width: 100%;
+//   este selector ~ es el que hace toda la magia.
+//   Gracias al selector de de hermanos generales (~) podemos hacer que cuando el input esta en estado :checked, se muestre el nav, y cuando no se encuentra en dicho estado, el menú se oculte.
+    #check {
+        display: none;
+        &:checked~.navMenu {
+            height: 100vh;
+            li {
+                display: block;
+            }
+        }
+    }
+
+    .barBtn {
+        width: 100%;
+        padding-left: 20px;
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
+        z-index:10;
+        background: $azul;
+     
+
+
+    }
+
+    .navMenu {
+        position: fixed;
+        width: 50%;
+        height: 0vh;
+        top: 0px;
+        background:$grisOscuro;
+        text-align: center;
+        transition: all 0.5s;
+        z-index: 2;
+
+
+        li {
+            display: none;
+            line-height: 20px;
+            margin: 80px 0;
+        }
+
+        a {
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            text-transform: uppercase;
+            font-weight:bold;
+
+
+            &.active {
+                color: $azul;
+            }
+
+            &:hover {
+                color: $azul;
+                transition: 0.5s;
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// nav {
+//     display: flex;
+//     background-color: $grisClaro;
+//     justify-content: center;
+//     position: sticky;
+//     top: 0;
+//     z-index: 100;
+//     width: 100%;
+//     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 10px 10px -5px;
+
+//     a {
+//         color: $grisOscuro;
+//         font-size: 0.8rem;
+//         margin: 10px 20px 10px 20px;
+
+//         &:hover {
+//             color: $azul;
+//             transform: scale(1.03);
+//         }
+
+//     }
+// }
+
+// .categoriaActiva{
+//     color: $azul;
+// }

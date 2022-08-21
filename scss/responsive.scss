@@ -1,0 +1,279 @@
+
+@media (min-width:800px) {
+
+    // responsive para NAV
+
+    nav {
+        height: 50px;
+        justify-content: center;
+        top: 0px;
+        transform: translateY(0px);
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 10px 10px -5px;
+
+        #check {
+            display: none;
+
+            &:checked~.navMenu {
+                height: 5vh;
+
+                li {
+                    display: block;
+                }
+            }
+        }
+
+        .barBtn {
+            display: none;
+        }
+
+        .navMenu {
+            position: relative;
+            height: auto;
+            width: 100%;
+            background: $grisClaro;
+            transition: none;
+
+            li {
+                display: inline-block;
+                margin: auto;
+
+                a {
+                    font-size: 18px;
+                    text-align: center;
+                    color: $grisOscuro;
+                }
+            }
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-content: space-around;
+            text-align: center;
+        }
+
+    }
+
+
+
+    // responsive para MAIN
+
+    .mainContainer {
+        .backgroundPrincipal_1 {
+            height: 60vh;
+
+            &::before {
+                background-position: 0% 50%;
+            }
+
+            .fraseContainer {
+                padding: 50px;
+                margin: auto;
+                transform: translate(-300px, -10px);
+                width: 600px;
+
+                .frase1 {
+                    font-size: 1.7rem;
+                }
+
+                .frase2 {
+                    font-size: 3rem;
+
+                }
+            }
+
+        }
+
+        .backgroundPrincipal_2 {
+            height: 60vh;
+
+            &::before {
+                background-position: center -400px;
+            }
+
+            .fraseContainer {
+                width: 600px;
+                @include fraseStyle;
+
+                .frase1 {
+                    font-size: 1.7rem;
+                }
+
+                .frase2 {
+                    font-size: 3rem;
+
+                }
+            }
+
+        }
+
+        .backgroundPrincipal_3 {
+            height: 60vh;
+
+            &::before {
+                background-position: 0px -400px;
+            }
+
+            .fraseContainer {
+                transform: translate(0px, -10px);
+
+                width: 600px;
+                @include fraseStyle;
+
+                .frase1 {
+                    font-size: 1.7rem;
+                }
+
+                .frase2 {
+                    font-size: 3rem;
+
+                }
+            }
+
+        }
+
+        .backgroundPrincipal_4 {
+            height: 60vh;
+
+            &::before {
+                background-position: center -220px;
+            }
+
+            .fraseContainer {
+                transform: translate(-350px, -10px);
+
+                width: 600px;
+                @include fraseStyle;
+
+                .frase1 {
+                    font-size: 1.7rem;
+                }
+
+                .frase2 {
+                    font-size: 3rem;
+
+                }
+            }
+
+        }
+
+        .sectionNosotros {
+            .textoNosotrosContainer {
+                padding: 10px;
+                width: 100%;
+                padding: 0px 200px 0px 200px;
+
+                h2 {
+                    @include titulo;
+                    font-size: 2rem;
+                }
+
+                p {
+                    text-align: justify;
+                    padding: 20px;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+
+        .sectionDestacados {
+            h2 {
+                font-size: 2rem;
+
+            }
+        }
+    }
+    // responsive para ordenarProductos
+    .ordenarProdcutos {
+       
+        h1 {
+            font-size: 1.5rem;
+        }
+    
+        .ordenar {
+        font-size: 1rem;
+        select{
+            font-size: 1rem;
+            padding: 5px;
+            border-radius: 15px;
+            width: 110px;
+        }
+        }
+    }
+
+    // responsive para MARCAS
+
+    .marcasContainer {
+        h2 {
+            font-size: 2rem;
+        }
+
+        .textoMarcasContainer {
+            p {
+                width: 450px;
+                height: 350px;
+                transform: translate(450px, 300px);
+                padding: 30px;
+                font-size: 1.5rem;
+            }
+
+            img {
+                width: 900px;
+                transform: translate(-100px, -200px);
+            }
+        }
+
+    }
+
+    // responsive para GRID
+
+    .grid_Container {
+        width: 70%;
+    }
+
+    .item1 {
+        height: 200px;
+    }
+
+    .item5 {
+        height: 300px;
+    }
+
+
+    // responsive para FOOTER
+
+
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+
+        .containerElementsFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        .contactoFormularioContainer {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .redesMapaContainer {
+            margin-left: 50px;
+
+            .redesContainer {
+                img {
+                    width: 40px;
+                    margin: 50px 10px 20px 10px;
+                }
+            }
+
+            .mapa iframe {
+                height: 400px;
+                width: 400px;
+            }
+        }
+    }
+}

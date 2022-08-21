@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../css/main.css">
+    <title>BAZAR</title>
+</head>
+
+<body>
+    <header>
+        <!-- DIV CONTENEDOR DE TODO LO QUE VAMOS A COLOCAR EN EL HEADER -->
+        <div class="headerContainer">
+
+            <img id="logo" class="logo" src="../imagenes/logoLinguini-04.svg" alt="logo">
+
+            <div class="buscarContainer">
+                <input class="inputBusqueda" placeholder="Buscar" type="text">
+                <span id="lupa" class="material-symbols-outlined">
+                    search
+                </span>
+            </div>
+
+            <div class="carrito">
+                <div><span class="material-symbols-outlined">
+                        shopping_cart
+                    </span></div>
+                <h3 class="cantidad">3</h3>
+            </div>
+        </div>
+    </header>
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="barBtn">
+            <span class="material-symbols-outlined">menu</span>
+        </label>
+
+        <ul class="navMenu">
+            <li><a href="../index.html#logo">
+                    <h2>NOSOTROS</h2>
+                </a></li>
+
+            <li><a  class=" active" href="../vistas/bazar.html">
+                    <h2>BAZAR</h2>
+                </a></li>
+
+            <li><a href="../vistas/cubiertos.html">
+                    <h2>CUBIERTOS</h2>
+                </a></li>
+
+            <li><a href="../vistas/vajillas.html">
+                    <h2>VAJILLAS</h2>
+                </a></li>
+
+            <li><a href="../index.html#marcas">
+                    <h2>MARCAS</h2>
+                </a></li>
+
+            <li><a href="#contactos">
+                    <h2>CONTACTOS</h2>
+                </a></li>
+        </ul>
+    </nav>
+
+    <!-- DIV CONTENEDOR DEL CONTENIDO CENTRAL DE LA PAGINA -->
+    <div class="mainContainer">
+
+        <!-- DIV DONDE COLOCALEREMOS LA IMAGENDE FONDO MAS EL TEXTO -->
+        <div class="backgroundPrincipal_2">
+            <div class="fraseContainer">
+                <h1 class="frase1">EL ARTE DE LA COCINA</h1>
+                <h1 class="frase2">BAZAR</h1>
+            </div>
+        </div>
+
+
+
+
+        <footer>
+
+            <div class="containerElementsFooter">
+
+                <!-- DIV QUE SE LE VA A ASIGNAR UNA CLASE QUE VA A CONTENENER DATOS DE CONTACTO + FORMULARRIO -->
+
+                <div class="contactoFormularioContainer">
+
+                    <section class="" id="contactos">
+
+                        <!-- DATOS DE CONTACTO -->
+
+                        <div class="datosContactoContainer">
+                            <h3>Contactános</h3>
+                            <div class="itemContacto">
+                                <div><span class="material-symbols-outlined">
+                                        call
+                                    </span></div>
+                                <div>(555)555-555-555</div>
+                            </div>
+                            <div class="itemContacto">
+                                <div><span class="material-symbols-outlined">
+                                        mail
+                                    </span></div>
+                                <div>ventas@linguini.com</div>
+                            </div>
+                        </div>
+
+                        <!-- FORMULARIO -->
+
+                        <form class="styleFormulario">
+                            <div class="inputDatosContainer">
+                                <input class="nombreStyle" placeholder="Nombre:" type="text">
+                                <input class="emailStyle" placeholder="Correo electronico:" type="email">
+                            </div>
+                            <textarea class="ComentariosStyler" placeholder="Comentarios" name="" id="" cols="35"
+                                rows="15"></textarea>
+                            <div class="btnContainer">
+                                <input class="botones" type="submit">
+                                <input class="botones" type="reset">
+                            </div>
+                        </form>
+
+                    </section>
+                </div>
+
+                <!--DIV QUE SE LE VA A ASIGNAR UNA CLASE QUE VA A CONTENER LAS REDES + MAPAK -->
+
+                <div class="redesMapaContainer">
+
+                    <!-- REDES SOCIALES -->
+
+                    <div>
+                        <div>
+                            <ul class="redesContainer">
+                                <li><a href="#"><img src="../iconos/iconoFacebook.svg" alt="iconoFacebook"></a></li>
+                                <li><a href=""><img src="../iconos/iconosInstagram.svg" alt="iconosInstagram"></a>
+                                </li>
+                                <li><a href=""><img src="../iconos/iconosTwitter.svg" alt="iconosTwitter"></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- MAPA -->
+
+                        <div>
+
+                            <div class="ubicacionContainer">
+                                <div class="iconUbicacion"><span class="material-symbols-outlined">
+                                        location_on
+                                    </span></div>
+
+                                <h3>Direccion fisica del ecommerce</h3>
+                            </div>
+
+                            <div class="mapa">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115553.2627499884!2d55.21783241762746!3d25.168145386307735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43348a67e24b%3A0xff45e502e1ceb7e2!2sBurj%20Khalifa!5e0!3m2!1ses!2sar!4v1654831596880!5m2!1ses!2sar"
+                                    width="300    " height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- NOMBRE DEL ESTUDIANTE -->
+
+            <div class="nombreEstudiante">
+                <h3>By: nombre del estudiante</h3>
+            </div>
+        </footer>
+
+</body>
+
+
+</html>
